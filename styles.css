@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Orbitron&family=Roboto:wght@300&family=Shadows+Into+Light&display=swap');
+
+
+#main {
+	display: flex;
+	flex-direction: column;
+}
+/* General Styles */
+
+/* Flashlight Styles */
+#flashlight {
+	height: 20vw;
+	width: 20vw;
+	background-color: white;
+	opacity: .3;
+	border-radius: 50%;
+	box-shadow: 0 0 20vw #fff;
+	z-index: -1;
+	position: absolute;
+}
+
+/* Flashlight Styles */
+header {
+	height: 650px;
+	margin: 9%;
+}
+
+/* Flashlight Styles */
+body {
+	padding: 0;
+	margin: 0;
+}
+
+/* Section Styles */
+.section {
+	overflow: scroll;
+	padding: 5%;
+	height: 80vmax;
+	margin: 3%;
+}
+
+.section_h2 {
+	text-align: center;
+	font-size: 4vmin;
+}
+
+/* End General Styles */
+
+
+/* Nav Menu */
+
+#name_container {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 40vmin;
+	margin: 3%;
+}
+
+#my_name {
+	font-size: 2.5vmin;
+}
+
+/*Switch*/
+
+#switch_container {
+	transform: translate(0,0) rotate(90deg);
+	height: 3vw;
+	align-self: center;
+	display: flex;
+	align-items: center;
+}
+
+#outer_switch {
+	width: 4vmin;
+	height: 400%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: lightgrey;
+}
+
+#inner_switch {
+	width: 75%;
+	height: 75%;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	background-color: #eee;
+	border: 1 px solid black;
+}
+
+#switch_tip {
+	border: 1px solid white;
+	height: 45%;
+	width: 100%;
+ transition: transform 0.3s ease; /* Optional: Add transition for smooth movement */
+	background-color: black;
+}
+
+/* End Switch */
+
+/*Nav Links*/
+
+nav {
+	font-family: Cinzel;
+	font-size: 2.5vmax;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 650px;
+}
+
+nav a {
+	margin-left: 8%;
+}
+
+#navLinks_container {
+	padding: 2%;
+	margin: 3%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-family: Cinzel;
+	font-size: 2.5vmin;
+}
+
+.navLink a {
+	text-decoration: none;
+	font-size: 100%;
+}
+
+.navLink:hover {
+	transform: scaleX(1.1) scaleY(1.1);
+	cursor: pointer;
+}
+
+/* End Nav Links*/
+
+/* End Nav Menu */
+
+/* About Me*/
+
+#about_me_container {
+	font-size: 3vmin;
+}
+
+#about_me_paragraphs {
+	padding: 5%;
+	margin: 5%;
+}
+
+#about_me_container figure {
+	height: 200px;
+	margin: 0;
+	padding: 0;
+}
+
+#my_photo {
+	height: 40vmin;
+	bordeR: 5px dashed red;
+	border-radius: 20vmin;
+	margin: 0;
+}
+
+/* End About Me*/
+
+/* Skills */
+
+#skills_container {
+ display: grid;
+	grid-template-rows: repeat(2, 1fr);		
+	height: 90vmax;
+	align-items: center;
+	overflow: scroll;
+}
+
+#skills_container h3 {
+	text-align: center;
+}
+
+.list_container_ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+} 
+
+.certs_h3_container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 5% 0;
+	font-size: 3vmin;
+} 
+
+.certs_h3_container i {
+	cursor: pointer;
+} 
+
+.list_item_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 15vmin;
+	font-size: 3vmin;
+}
+
+.skill_icons_container {
+	font-size: 5vmin;
+	margin-top: 10%
+} 
+
+.social_icon_container {
+	cursor: pointer;
+} /*container for individual icons and their "labels"*/
+
+.skill_icon {
+	margin: 5%;
+}
+
+.skill_icon:hover {
+  transform: scale(1.5);
+}
+
+#frontend_icons {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 2%;
+	height: 50px;
+}
+
+#backend_icons {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 2%;
+	height: 50px;
+}
+
+/*End Skills*/
+
+/* Skill Icon Colors */
+
+#htmlIcon {
+  color: #E34F26;
+}
+
+#cssIcon {
+  color: #1572B6;
+}
+
+#fontawesomeIcon {
+  color: skyblue;
+}
+
+#figmaIcon {
+  color: #F24E1E;
+}
+
+#sassIcon {
+  color: #CC6699;
+}
+
+#bootstrapIcon {
+  color: #563D7C;
+}
+
+#jsIcon {
+  color: #F7DF1E;
+}
+
+#reactIcon {
+  color: skyblue;
+}
+
+#phpIcon {
+  color: #777BB4;
+}
+
+#pythonIcon {
+  color: yellow;
+}
+
+#bashIcon {
+  color: black;
+}
+
+#postgresIcon {
+  color: #0064a5;
+}
+
+#databaseIcon {
+  color: #00758F;
+}
+
+/* End Skill Icon Colors */
+
+/*Other Skills*/
+
+#other_skills_container {
+	font-size: 3vmin;
+	padding: 5%;
+}
+
+#other_skills_container {
+	margin: 2% 0;
+	padding: 15%;
+	height: 400px;
+	font-size: 3vmin;
+}
+
+.other_skills_h3_container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 3%;
+}
+
+.other_skills_h3_container i {
+	cursor: pointer;
+}
+
+.other_skill_ul {
+	list-style-type: numeric;
+	margin: 0;
+	padding: 0;
+}
+
+.other_skill_ul li {
+	margin: 1%;
+}
+
+/* End Other Skills */
+
+/* Portfolio */
+
+.project_container {
+	display: flex;
+	justify-content: end;
+	height: 80vmax;
+}
+
+figure {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 0;
+	height: 100%;
+}
+
+.button_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.button_container button {
+	width: 45%;
+	cursor: pointer;
+}
+
+.button_container button:hover {
+	transform: scale(.95);
+}
+
+figcaption {
+	height: 25vmax;
+	width: 100%;
+}
+
+.project_image {
+	height: 50vmin;
+	width: 70vmin;
+	border: 1px solid black;
+}
+
+/* Portfolio */
+
+/* Social Links */
+
+#social_links_container {
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+	font-size: 2vmin;
+}
+
+#social_links_container a {
+	text-decoration: none;
+}
+
+.icon {
+	font-size:4vw;
+}
+
+#linkedin {
+  color: #0077b5;
+}
+
+#github {
+  color: #A020F0;
+}
+
+#codepen {
+  color: yellow;
+}
+
+/* End Social Icons */
+
+/*Contact*/
+
+#contact_container {
+ display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	min-height: 600px;
+}
+
+#form_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+#contact_form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 2%;
+	row-gap: 10px;
+	font-size: 2vw;
+}
+
+#contact_form input, select, textarea {
+ outline: none;
+}
+
+#message {
+	width: 95%;
+	height: 150px;
+} /* PROBLEM CODE */
+
+/* End Contact */
+
+
+#test {
+	display: grid;
+	grid-template-columns: .5fr 1.5fr;
+	width: 100vw;
+	height: 100vh;
+	overflow: scroll;
+}
+
+#test2 {
+	height: 100%;
+}
