@@ -1,251 +1,284 @@
-<div id="test">
+<!DOCTYPE html>
+<html>
 	
-  <header>
-    <nav>
-	     <div id="name_container">
-							<div id="my_name">
-         <h1>James Huff</h1>
-	        <p>Web Developer</p>
-							</div>
-					  <div id="switch_container">
-						   <div id="outer_switch">
-							    <div id="inner_switch">
-							      <div id="switch_tip"></div>
-										 </div>
-				     </div>
-				   </div>
-				 </div>
-	     <div id="navLinks_container">
-		    <div id="aboutMeLinkContainer">
-				    <p class="navLink"><a href="#" onclick="showSection('about_me_section')">About Me</a></p>
-		    </div>
-					 <div id="skillsLinkContainer">
-				    <p class="navLink"><a href="#" onclick="showSection('skills_section')">Skills</a></p>
-		    </div> 
-		    <div id="portfolioLinkContainer">
-		 	    <p class="navLink"><a href="#" onclick="showSection('portfolio_section')">Portfolio</a></p>
-		    </div>
-		    <div id="contactLinkContainer">
-		 	    <p class="navLink"><a href="#" onclick="showSection('contact_section')">Contact</a></p>
-		    </div> 
-	   </div>
-    </nav>
-	   <div id="flashlight"></div>
-  </header>
-
-  <div id="main">
-		
-	  <div id="test2">
-				
-     <section class="section" id="about_me_section">
-       <div id="about_me_container">
-	        <h2 class="section_h2">About Me</h2>
-								 <figure>
-								 	 <img id="my_photo" src="https://i.ibb.co/2hpxH6c/menow.jpg" alt="A photo of James.">
-								 </figure>
-	        <div id="about_me_paragraphs">
-	          <p>I am a motivated and dedicated web development enthusiast with a strong foundation in HTML5, CSS3, SCSS, SASS, and JavaScript.</p>
-	          <p>Currently seeking an entry-level or internship position to gain practical experience in the industry.</p>
-           <p>I am familiar with JavaScript frameworks and libraries such as jQuery, d3, and React. I also have basic knowledge of design tools like Figma and Photoshop.</p>
-           <p>I am eager to further enhance my skills in web development to develop full stack applications, possibly with more of a focus on backend technologies as I am finding SQL and BASH scripting to be enjoyable.</p>
-	          <p>In pursuit of that greater knowledge I am currently in the process of learning PostgreSQL, BASH, SQL and Github for version control.</p>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Portfolio Page with a short bio and an array of projects to showcase my skills.">
+    <meta name="keywords" content="background, portfolio, contact">
+    <meta name="author" content="James Huff">
+    <meta charset="UTF-8" lang="en">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/451aa3de05.js" crossorigin="anonymous"></script>	
+  </head>
+	
+  <body>
+    <div id="test">
+      <header>
+        <nav>
+          <div id="name_container">
+            <div id="my_name">
+              <h1>James Huff</h1>
+	      <p>Web Developer</p>
+            </div>
+            <div id="switch_container">
+              <div id="outer_switch">
+	        <div id="inner_switch">
+	          <div id="switch_tip"></div>
 	        </div>
-       </div>
-     </section>
+              </div>
+            </div>
+          </div>
+          <div id="navLinks_container">
+            <div id="aboutMeLinkContainer">
+              <p class="navLink"><a href="#" onclick="showSection('about_me_section')">About Me</a></p>
+            </div>
+            <div id="skillsLinkContainer">
+              <p class="navLink"><a href="#" onclick="showSection('skills_section')">Skills</a></p>
+            </div> 
+            <div id="portfolioLinkContainer">
+              <p class="navLink"><a href="#" onclick="showSection('portfolio_section')">Portfolio</a></p>
+            </div>
+            <div id="contactLinkContainer">
+              <p class="navLink"><a href="#" onclick="showSection('contact_section')">Contact</a></p>
+            </div> 
+          </div>
+        </nav>
+        <div id="flashlight"></div>
+      </header>
 
-     <section class="section" id="skills_section">
-       <div id="skills_container">			
-         <div id="list_container">
-							    <div id="frontend_container" class="list">
-										   <h2 class="section_h2">Skills and Certifications</h2>
-             <ul id="frontend_list" class="list_container_ul">
-								       <div class="certs_h3_container">
-								         <i class="fa fa-arrow-left" onclick="switchSkill('backend_list')"></i>
-	                <h3 class="list_container_h3">Front-End</h3>
-										       <i class="fa fa-arrow-right" onclick="switchSkill('backend_list')"></i>
-								       </div>
-								       <div class="list_item_container">
-	                <li><a href="https://www.freecodecamp.org/certification/jhuff95/responsive-web-design">Responsive Web Design - freeCodeCamp</a></li> <!--Responsive Web Design Cert-->
-                 <li><a href="https://www.freecodecamp.org/certification/jhuff95/javascript-algorithms-and-data-structures">Javascript Algorithms & Data Structures - freeCodeCamp</a></li> <!--Javascript Cert-->
-	                <li><a href="https://www.freecodecamp.org/certification/jhuff95/front-end-development-libraries">Front-End Libriaries Certification - freeCodeCamp</a></li> <!--Frontend Cert-->
-								       </div>
-												   <div id="frontend_icons" class="skill_icons_container">
-                 <i id="htmlIcon" class="skill_icon fa-brands fa-html5"></i>
-	                <i id="cssIcon" class="skill_icon fa-brands fa-css3-alt"></i>
-	                <i id="fontawesomeIcon" class="skill_icon fa-solid fa-font-awesome"></i>
-	                <i id="figmaIcon" class="skill_icon fa-brands fa-figma"></i>
-	                <i id="sassIcon" class="skill_icon fa-brands fa-sass"></i>
-	                <i id="bootstrapIcon" class="skill_icon fa-brands fa-bootstrap"></i>
-	                <i id="jsIcon" class="skill_icon fa-brands fa-square-js"></i>
-	                <i id="reactIcon" class="skill_icon fa-brands fa-react"></i>
-	              </div>
-	            </ul>
-							    </div>
-							    <div id="backend_container" class="list">
-	            <ul id="backend_list" class="list_container_ul"> 
-								       <div class="certs_h3_container">
-											      <i class="fa fa-arrow-left" onclick="switchSkill('frontend_list')"></i>
-	                <h3 class="list_container_h3">Back-End</h3>
-										       <i class="fa fa-arrow-right" onclick="switchSkill('frontend_list')"></i>
-									      </div>
-								       <div class="list_item_container">
-	                <li><a href="https://i.ibb.co/1T4NWQw/sololearn-python.jpg">Python Fundamentals - Sololearn</li> <!--Python Cert-->
-	                <li><a href="https://i.ibb.co/WBZMdm0/php-sololearn.jpg">PHP Fundamentals - Sololearn</a></li> <!--Php Cert-->
-									        </div>
-												   <div id="backend_icons" class="skill_icons_container">
-                 <i id="phpIcon" class="skill_icon fa-brands fa-php" aria-hidden="true"></i>
-	                <i id="pythonIcon" class="skill_icon fa-brands fa-python" aria-hidden="true"></i>
-	                <i id="bashIcon" class="skill_icon fas fa-terminal" aria-hidden="true"></i>
-	                <i id="databaseIcon" class="skill_icon fa-solid fa-database" aria-hidden="true"></i>
-	              </div>
-             </ul>
-							    </div>
-         </div> <!-- Certs -->
-         <div id="other_skills_container">
-           <div id="technical_skills" class="skill_div">
-							      <div class="other_skills_h3_container">
-							   <i class="fa fa-arrow-left" onclick="switchOtherSkill('design_collab_skills')"></i>
-          <h3 id="technical_skills_title" class="other_skills_h3">Technical Skills</h3>
-							   <i class="fa fa-arrow-right" onclick="switchOtherSkill('web_skills_container')"></i>
-							 </div>
-             <ul id="tech_skills_ul" class="other_skill_ul">
-               <li>Proficient in HTML5, CSS3, SCSS, SASS, and JavaScript.</li>
-               <li>Familiarity with JavaScript frameworks and libraries, including jQuery, d3, and React.</li>
-               <li>Basic understanding of design tools like Figma and Photoshop for UI design.</li>
-               <li>Knowledge of version control using Github.</li>
-             </ul>
-           </div> <!--Technical skills-->
-           <div id="web_skills_container" class="skill_div"> 
-							      <div class="other_skills_h3_container">
-							        <i class="fa fa-arrow-left" onclick="switchOtherSkill('technical_skills')"></i>
-               <h3>Web Development Skills</h3>
-									      <i class="fa fa-arrow-right" onclick="switchOtherSkill('design_collab_skills')"></i>
-							      </div>
-             <ul id="web_skills_ul" class="other_skill_ul">
-               <li>Able to create responsive web pages using HTML5 and CSS3.</li>
-               <li>Basic understanding of SCSS and SASS for clean and maintainable CSS code.</li>
-               <li>Familiarity with JavaScript for implementing interactive functionality on web applications.</li>
-               <li>Basic knowledge of jQuery for DOM manipulation and exposure to handling AJAX requests.</li>
-               <li>Exposure to React for building user interfaces with components and basic state management.</li>
-             </ul>
-           </div> <!--Web Dev skills-->
-           <div id="design_collab_skills" class="skill_div">
-							      <div class="other_skills_h3_container">
-							   <i class="fa fa-arrow-left" onclick="switchOtherSkill('web_skills_container')"></i>
-          <h3 id="design_collab_skills_container">Design & Collab. Skills</h3>
-									 <i class="fa fa-arrow-right" onclick="switchOtherSkill('technical_skills')"></i>
-							 </div>
-             <ul id="design_ul" class="other_skill_ul">
-           <li>Familiarity with Figma and Photoshop for designing and prototyping user interfaces.</li>
-           <li>Currently attaining a basic understanding of collaboration through Git, enabling code integration and version control.</li>
-         </ul>
-           </div> <!--Design skills-->
-         </div>
-       </div>  <!-- Certs Container -->
-     </section>
+      <div id="main">
+        <div id="test2">
+	      
+          <section class="section" id="about_me_section">
+            <div id="about_me_container">
+	      <h2 class="section_h2">About Me</h2>
+	      <figure>
+	        <img id="my_photo" src="https://i.ibb.co/2hpxH6c/menow.jpg" alt="A photo of James.">
+	      </figure>
+	      <div id="about_me_paragraphs">
+	        <p>I am a motivated and dedicated web development enthusiast with a strong foundation in HTML5, CSS3, SCSS, SASS, and JavaScript.</p>
+	        <p>Currently seeking an entry-level or internship position to gain practical experience in the industry.</p>
+                <p>I am familiar with JavaScript frameworks and libraries such as jQuery, d3, and React. I also have basic knowledge of design tools like Figma and Photoshop.</p>
+                <p>I am eager to further enhance my skills in web development to develop full stack applications, possibly with more of a focus on backend technologies as I am finding SQL and BASH scripting to be enjoyable.</p>
+	        <p>In pursuit of that greater knowledge I am currently in the process of learning PostgreSQL, BASH, SQL and Github for version control.</p>
+	      </div>
+            </div>
+          </section>
 
-     <section class="section" id="portfolio_section">
-						
-       <div id="portfolio_container">
-								
-         <h2 class="section_h2">Portfolio</h2>			
-			      
-					    <div id="image0_div" class="project_container">
-											<figure>
-													<div class="button_container">
-							          <button onclick="switchImage('image2_div')">Back</button>
-							           <button onclick="switchImage('image1_div')">Next</button>
-						         </div>
-						       <a href="https://codepen.io/jhuff95/pen/zYmgvpB">
-											      <img id="image0" class="project_image" src="https://i.ibb.co/GsyjV30/Untitled-8.png" alt="image0">
-						         </a>
-													<figcaption>Description 0</figcaption>
-											</figure>
-					    </div>					
-										
-					    <div id="image1_div" class="project_container"> 
-											<figure>
-													<div class="button_container">
-							          <button onclick="switchImage('image0_div')">Back</button>
-							          <button onclick="switchImage('image2_div')">Next</button>
-						         </div> 
-						       <a href="https://codepen.io/jhuff95/pen/RwezBVM">
-												     <img id="image1" class="project_image" src="https://i.ibb.co/Qdsm3ML/Untitled.png" alt="image1">
-						         </a>
-													<figcaption>Description 1</figcaption>
-											</figure>				       
-					    </div>				
-										
-					    <div id="image2_div" class="project_container">
-											<figure>
-													<div class="button_container">
-							          <button onclick="switchImage('image1_div')">Back</button>
-							          <button onclick="switchImage('image0_div')">Next</button>
-						         </div> 
-						       <a href="https://codepen.io/jhuff95/pen/PoygZem">          
-												     <img id="image2" class="project_image" src="https://i.ibb.co/xmMDCgZ/Screenshot-2023-06-03-8-22-33-PM.png" alt="image2">
-						         </a>
-													<figcaption>Description 2</figcaption>
-											</figure>
-					    </div>			
-										
-       </div>
-						
-     </section>
+          <section class="section" id="skills_section">
+            <div id="skills_container">	
+		    
+              <div id="list_container">
+	        <div id="frontend_container" class="list">
+	          <h2 class="section_h2">Skills and Certifications</h2>
+                  <ul id="frontend_list" class="list_container_ul">
+			  
+		    <div class="certs_h3_container">
+		      <i class="fa fa-arrow-left" onclick="switchSkill('backend_list')"></i>
+	              <h3 class="list_container_h3">Front-End</h3>
+		      <i class="fa fa-arrow-right" onclick="switchSkill('backend_list')"></i>
+		    </div>
+			  
+		    <div class="list_item_container">
+	              <li><a href="https://www.freecodecamp.org/certification/jhuff95/responsive-web-design">Responsive Web Design - freeCodeCamp</a></li> <!--Responsive Web Design Cert-->
+                      <li><a href="https://www.freecodecamp.org/certification/jhuff95/javascript-algorithms-and-data-structures">Javascript Algorithms & Data Structures - freeCodeCamp</a></li> <!--Javascript Cert-->
+	              <li><a href="https://www.freecodecamp.org/certification/jhuff95/front-end-development-libraries">Front-End Libriaries Certification - freeCodeCamp</a></li> <!--Frontend Cert-->
+		    </div>
+			  
+		    <div id="frontend_icons" class="skill_icons_container">
+                      <i id="htmlIcon" class="skill_icon fa-brands fa-html5"></i>
+	              <i id="cssIcon" class="skill_icon fa-brands fa-css3-alt"></i>
+	              <i id="fontawesomeIcon" class="skill_icon fa-solid fa-font-awesome"></i>
+	              <i id="figmaIcon" class="skill_icon fa-brands fa-figma"></i>
+	              <i id="sassIcon" class="skill_icon fa-brands fa-sass"></i>
+	              <i id="bootstrapIcon" class="skill_icon fa-brands fa-bootstrap"></i>
+	              <i id="jsIcon" class="skill_icon fa-brands fa-square-js"></i>
+	              <i id="reactIcon" class="skill_icon fa-brands fa-react"></i>
+	            </div>
+	          </ul>
+	        </div>
+		      
+	        <div id="backend_container" class="list">
+	          <ul id="backend_list" class="list_container_ul"> 
+			  
+		    <div class="certs_h3_container">
+		      <i class="fa fa-arrow-left" onclick="switchSkill('frontend_list')"></i>
+	              <h3 class="list_container_h3">Back-End</h3>
+		      <i class="fa fa-arrow-right" onclick="switchSkill('frontend_list')"></i>
+	            </div>
+			  
+		    <div class="list_item_container">
+	              <li><a href="https://i.ibb.co/1T4NWQw/sololearn-python.jpg">Python Fundamentals - Sololearn</li> <!--Python Cert-->
+	              <li><a href="https://i.ibb.co/WBZMdm0/php-sololearn.jpg">PHP Fundamentals - Sololearn</a></li> <!--Php Cert-->
+		    </div>
+			  
+		    <div id="backend_icons" class="skill_icons_container">
+                      <i id="phpIcon" class="skill_icon fa-brands fa-php" aria-hidden="true"></i>
+	              <i id="pythonIcon" class="skill_icon fa-brands fa-python" aria-hidden="true"></i>
+	              <i id="bashIcon" class="skill_icon fas fa-terminal" aria-hidden="true"></i>
+	              <i id="databaseIcon" class="skill_icon fa-solid fa-database" aria-hidden="true"></i>
+	            </div>
 
-	    <section class="section" id="contact_section">
-			    <div id="contact_container">
+                  </ul>
+	        </div>
+              </div> <!-- Certs -->
+		  
+              <div id="other_skills_container">    
+                <div id="technical_skills" class="skill_div">
+		      
+	          <div class="other_skills_h3_container">
+		    <i class="fa fa-arrow-left" onclick="switchOtherSkill('design_collab_skills')"></i>
+                    <h3 id="technical_skills_title" class="other_skills_h3">Technical Skills</h3>
+		    <i class="fa fa-arrow-right" onclick="switchOtherSkill('web_skills_container')"></i>
+		  </div>
+		      
+                  <ul id="tech_skills_ul" class="other_skill_ul">
+                    <li>Proficient in HTML5, CSS3, SCSS, SASS, and JavaScript.</li>
+                    <li>Familiarity with JavaScript frameworks and libraries, including jQuery, d3, and React.</li>
+                    <li>Basic understanding of design tools like Figma and Photoshop for UI design.</li>
+                    <li>Knowledge of version control using Github.</li>
+		  </ul 	
+                </div> <!--Technical skills-->
+		    
+                <div id="web_skills_container" class="skill_div"> 	
+	          <div class="other_skills_h3_container">
+		    <i class="fa fa-arrow-left" onclick="switchOtherSkill('technical_skills')"></i>
+                    <h3>Web Development Skills</h3>
+		    <i class="fa fa-arrow-right" onclick="switchOtherSkill('design_collab_skills')"></i>
+		  </div>
+			
+                  <ul id="web_skills_ul" class="other_skill_ul">
+                    <li>Able to create responsive web pages using HTML5 and CSS3.</li>
+                    <li>Basic understanding of SCSS and SASS for clean and maintainable CSS code.</li>
+                    <li>Familiarity with JavaScript for implementing interactive functionality on web applications.</li>
+                    <li>Basic knowledge of jQuery for DOM manipulation and exposure to handling AJAX requests.</li>
+                    <li>Exposure to React for building user interfaces with components and basic state management.</li>
+                  </ul>	
+                </div> <!--Web Dev skills-->
+		    
+                <div id="design_collab_skills" class="skill_div">
+			
+	          <div class="other_skills_h3_container">
+		    <i class="fa fa-arrow-left" onclick="switchOtherSkill('web_skills_container')"></i>
+                    <h3 id="design_collab_skills_container">Design & Collab. Skills</h3>
+		    <i class="fa fa-arrow-right" onclick="switchOtherSkill('technical_skills')"></i>
+		  </div>
+			
+                  <ul id="design_ul" class="other_skill_ul">
+                    <li>Familiarity with Figma and Photoshop for designing and prototyping user interfaces.</li>
+                    <li>Currently attaining a basic understanding of collaboration through Git, enabling code integration and version control.</li>
+                  </ul>	
+                </div> <!--End Design skills-->       
+              </div> <!--End Other Skills Container--	  
+            </div>  <!-- End Certs Container -->
+          </section>
+
+          <section class="section" id="portfolio_section">
+		  
+	    <div id="portfolio_container">							
+              <h2 class="section_h2">Portfolio</h2>	
+	      <div id="image0_div" class="project_container">      
+		<figure>
+	          <div class="button_container">
+		    <button onclick="switchImage('image2_div')">Back</button>
+		    <button onclick="switchImage('image1_div')">Next</button>
+		  </div>
+		  <a href="https://codepen.io/jhuff95/pen/zYmgvpB">
+		    <img id="image0" class="project_image" src="https://i.ibb.co/GsyjV30/Untitled-8.png" alt="image0">
+		  </a>
+		  <figcaption>
+		   <p>Description 0</p>
+		  </figcaption>
+	        </figure>      
+	      </div>					
+										
+	      <div id="image1_div" class="project_container"> 
+	        <figure>
+		  <div class="button_container">
+		    <button onclick="switchImage('image0_div')">Back</button>
+		    <button onclick="switchImage('image2_div')">Next</button>
+		  </div> 
+		  <a href="https://codepen.io/jhuff95/pen/RwezBVM">
+		    <img id="image1" class="project_image" src="https://i.ibb.co/Qdsm3ML/Untitled.png" alt="image1">
+		  </a>
+		  <figcaption>Description 1</figcaption>
+		</figure>				       
+	      </div>				
+										
+	      <div id="image2_div" class="project_container">
+	        <figure>
+	          <div class="button_container">
+		    <button onclick="switchImage('image1_div')">Back</button>
+		    <button onclick="switchImage('image0_div')">Next</button>
+		  </div> 
+		  <a href="https://codepen.io/jhuff95/pen/PoygZem">          
+		    <img id="image2" class="project_image" src="https://i.ibb.co/xmMDCgZ/Screenshot-2023-06-03-8-22-33-PM.png" alt="image2">
+		  </a>
+		  <figcaption>Description 2</figcaption>
+		</figure>
+	      </div>												
+            </div>	
+	   	  
+          </section>
+
+	  <section class="section" id="contact_section">
+		  
+	    <div id="contact_container">
 			 
-			      <div id="form_container">				
-										 <div id="social_links_container">
-			          <a href="https://www.linkedin.com/in/jameshuff95/">
-							      <div class="social_icon_container">
+	      <div id="form_container">				
+	        <div id="social_links_container">
+		  <a href="https://www.linkedin.com/in/jameshuff95/">
+		    <div class="social_icon_container">
 	              <i id="linkedin" class="fa-brands fa-linkedin icon"></i>
 	              <p>LinkedIn</p>
 	            </div>
 	          </a>
-	            <a href="https://github.com/Jameshuff95">
+	          <a href="https://github.com/Jameshuff95">
 	            <div class="social_icon_container">
 	              <i id="github" class="fa-brands fa-github icon"></i>
 	              <p>Github</p>
 	            </div>
-           </a>
-             <a href="https://codepen.io/jhuff95">
+                  </a>
+                  <a href="https://codepen.io/jhuff95">
 	            <div class="social_icon_container">
 	              <i id="codepen" class="fab fa-codepen icon"></i>
 	              <p>CodePen</p>
 	            </div>
-           </a>
-			        </div>
-					      <form id="contact_form">
-							
-							      <label for="name">Name</label>
-							      <input id="name" type="text" name="name">
-					
-					        <label for="email">Email</label>
-							      <input id="email" type="email" name="email">
+                  </a>
+	        </div>
+		<form id="contact_form">
 			
-			          <label for="reason">Reason For Contacting Me</label>
-							      <select id="reason" name="reason" required>
-									 <option class="option" disabled>Select One</option>
-									 <option class="option">Option1</option>
-									 <option class="option">Option2</option>
-									 <option class="option">Option3</option>
-							 </select>
+		  <label for="name">Name</label>
+		  <input id="name" type="text" name="name">
 			
-			          <label for="message">Your Message</label>
-			          <textarea id="message" name="message" maxlength="300" required></textarea>
+		  <label for="email">Email</label>
+		  <input id="email" type="email" name="email">
 			
-	            <input id="send" name="send" type="submit" value="Submit">
+		  <label for="reason">Reason For Contacting Me</label>
+		  <select id="reason" name="reason" required>
+			  
+	            <option class="option" disabled>Select One</option>
+		    <option class="option">Option1</option>
+			  
+	            <option class="option">Option2</option>
+	            <option class="option">Option3</option>
+			  
+	          </select>
+			
+		  <label for="message">Your Message</label>
+		  <textarea id="message" name="message" maxlength="300" required></textarea>
+			
+	          <input id="send" name="send" type="submit" value="Submit">
 	
-					      </form>
-			      </div>
-								
-			    </div>
-	    </section>
-				
-		 </div>
+		</form>
+	      </div> <!--End Form Container-->
+	    </div> <!--End Contact Container-->
+		  
+	  </section>
 		
- </div>
-	
-</div>
+	  <script src="sript.js"></script>
+        </div>
+      </div>	
+    </div>
+  </body>
+</html>
