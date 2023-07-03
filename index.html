@@ -14,47 +14,69 @@
   <body>
     <div id="test">
       <header>
+  
         <nav>
+		
           <div id="name_container">
+		  
             <div id="my_name">
               <h1>James Huff</h1>
 	      <p>Web Developer</p>
             </div>
+		  
             <div id="switch_container">
-              <div id="outer_switch">
+		    
+              <div id="outer_switch">    
+		      
 	        <div id="inner_switch">
 	          <div id="switch_tip"></div>
-	        </div>
-              </div>
-            </div>
-          </div>
+	        </div>   
+		      
+              </div> 
+		    
+            </div> <!--End Switch Container-->
+		  
+          </div> <!--End Name Container-->
+		
           <div id="navLinks_container">
+		  
             <div id="aboutMeLinkContainer">
               <p class="navLink"><a href="#" onclick="showSection('about_me_section')">About Me</a></p>
             </div>
+		  
             <div id="skillsLinkContainer">
               <p class="navLink"><a href="#" onclick="showSection('skills_section')">Skills</a></p>
             </div> 
+		  
             <div id="portfolioLinkContainer">
               <p class="navLink"><a href="#" onclick="showSection('portfolio_section')">Portfolio</a></p>
             </div>
+		  
             <div id="contactLinkContainer">
               <p class="navLink"><a href="#" onclick="showSection('contact_section')">Contact</a></p>
             </div> 
-          </div>
-        </nav>
-        <div id="flashlight"></div>
+		  
+          </div> <!--End NavLinks Container-->
+		
+        </nav> <!--End Nav-->
+	      
+        <div id="flashlight"></div> <!--This div is intentionally not meant to have content-->
+	      
       </header>
 
       <div id="main">
         <div id="test2">
 	      
           <section class="section" id="about_me_section">
+		  
             <div id="about_me_container">
+		    
 	      <h2 class="section_h2">About Me</h2>
+		    
 	      <figure>
 	        <img id="my_photo" src="https://i.ibb.co/2hpxH6c/menow.jpg" alt="A photo of James.">
 	      </figure>
+		    
 	      <div id="about_me_paragraphs">
 	        <p>I am a motivated and dedicated web development enthusiast with a strong foundation in HTML5, CSS3, SCSS, SASS, and JavaScript.</p>
 	        <p>Currently seeking an entry-level or internship position to gain practical experience in the industry.</p>
@@ -62,16 +84,20 @@
                 <p>I am eager to further enhance my skills in web development to develop full stack applications, possibly with more of a focus on backend technologies as I am finding SQL and BASH scripting to be enjoyable.</p>
 	        <p>In pursuit of that greater knowledge I am currently in the process of learning PostgreSQL, BASH, SQL and Github for version control.</p>
 	      </div>
-            </div>
+		    
+            </div> <!--End About Me Container-->
+		  
           </section>
 
           <section class="section" id="skills_section">
+		  
             <div id="skills_container">	
 		    
               <div id="list_container">
 	        <div id="frontend_container" class="list">
 	          <h2 class="section_h2">Skills and Certifications</h2>
-                  <ul id="frontend_list" class="list_container_ul">
+			
+                  <ul id="frontend_list" class="list_container_ul">	
 			  
 		    <div class="certs_h3_container">
 		      <i class="fa fa-arrow-left" onclick="switchSkill('backend_list')"></i>
@@ -94,11 +120,14 @@
 	              <i id="bootstrapIcon" class="skill_icon fa-brands fa-bootstrap"></i>
 	              <i id="jsIcon" class="skill_icon fa-brands fa-square-js"></i>
 	              <i id="reactIcon" class="skill_icon fa-brands fa-react"></i>
-	            </div>
-	          </ul>
-	        </div>
+	            </div>  
+			  
+	          </ul> <!--End Frontend List-->
+			
+	        </div> <!--End FrontEnd Container-->
 		      
 	        <div id="backend_container" class="list">
+			
 	          <ul id="backend_list" class="list_container_ul"> 
 			  
 		    <div class="certs_h3_container">
@@ -119,11 +148,14 @@
 	              <i id="databaseIcon" class="skill_icon fa-solid fa-database" aria-hidden="true"></i>
 	            </div>
 
-                  </ul>
-	        </div>
-              </div> <!-- Certs -->
+                  </ul> <!--End Backend List-->
+			
+	        </div> <!--End Backend Container-->
+		      
+              </div> <!--End List Container -->
 		  
               <div id="other_skills_container">    
+		      
                 <div id="technical_skills" class="skill_div">
 		      
 	          <div class="other_skills_h3_container">
@@ -138,9 +170,11 @@
                     <li>Basic understanding of design tools like Figma and Photoshop for UI design.</li>
                     <li>Knowledge of version control using Github.</li>
 		  </ul 	
+			  
                 </div> <!--Technical skills-->
 		    
                 <div id="web_skills_container" class="skill_div"> 	
+			
 	          <div class="other_skills_h3_container">
 		    <i class="fa fa-arrow-left" onclick="switchOtherSkill('technical_skills')"></i>
                     <h3>Web Development Skills</h3>
@@ -154,6 +188,7 @@
                     <li>Basic knowledge of jQuery for DOM manipulation and exposure to handling AJAX requests.</li>
                     <li>Exposure to React for building user interfaces with components and basic state management.</li>
                   </ul>	
+			
                 </div> <!--Web Dev skills-->
 		    
                 <div id="design_collab_skills" class="skill_div">
@@ -168,6 +203,7 @@
                     <li>Familiarity with Figma and Photoshop for designing and prototyping user interfaces.</li>
                     <li>Currently attaining a basic understanding of collaboration through Git, enabling code integration and version control.</li>
                   </ul>	
+			
                 </div> <!--End Design skills-->       
               </div> <!--End Other Skills Container--	  
             </div>  <!-- End Certs Container -->
@@ -175,77 +211,114 @@
 
           <section class="section" id="portfolio_section">
 		  
-	    <div id="portfolio_container">							
+	    <div id="portfolio_container">
+		    
               <h2 class="section_h2">Portfolio</h2>	
-	      <div id="image0_div" class="project_container">      
+	
+	      <div id="image0_div" class="project_container">   
+		      
 		<figure>
+			
 	          <div class="button_container">
 		    <button onclick="switchImage('image2_div')">Back</button>
 		    <button onclick="switchImage('image1_div')">Next</button>
 		  </div>
+			
 		  <a href="https://codepen.io/jhuff95/pen/zYmgvpB">
 		    <img id="image0" class="project_image" src="https://i.ibb.co/GsyjV30/Untitled-8.png" alt="image0">
 		  </a>
+			
 		  <figcaption>
-		   <p>Description 0</p>
+		    <p>Description 0</p>
 		  </figcaption>
+			
 	        </figure>      
-	      </div>					
+		      
+	      </div>  <!--End Image_0 Div-->			
 										
 	      <div id="image1_div" class="project_container"> 
+		      
 	        <figure>
+			
 		  <div class="button_container">
 		    <button onclick="switchImage('image0_div')">Back</button>
 		    <button onclick="switchImage('image2_div')">Next</button>
 		  </div> 
+			
 		  <a href="https://codepen.io/jhuff95/pen/RwezBVM">
 		    <img id="image1" class="project_image" src="https://i.ibb.co/Qdsm3ML/Untitled.png" alt="image1">
 		  </a>
-		  <figcaption>Description 1</figcaption>
+			
+		  <figcaption>
+		    <p>Description 1</p>
+		  </figcaption>
+			
 		</figure>				       
-	      </div>				
+		      
+	      </div> <!--End Image_1 Div-->		
 										
 	      <div id="image2_div" class="project_container">
+		      
 	        <figure>
+			
 	          <div class="button_container">
 		    <button onclick="switchImage('image1_div')">Back</button>
 		    <button onclick="switchImage('image0_div')">Next</button>
 		  </div> 
+			
 		  <a href="https://codepen.io/jhuff95/pen/PoygZem">          
 		    <img id="image2" class="project_image" src="https://i.ibb.co/xmMDCgZ/Screenshot-2023-06-03-8-22-33-PM.png" alt="image2">
 		  </a>
-		  <figcaption>Description 2</figcaption>
+			
+		  <figcaption>
+		    <p>Description 2</p>
+		  </figcaption>
+			
 		</figure>
-	      </div>												
-            </div>	
-	   	  
+		      
+	      </div> <!--End Image_3 Div-->
+		    
+            </div> <!--End Portfolio Container-->	
+
           </section>
 
 	  <section class="section" id="contact_section">
 		  
-	    <div id="contact_container">
-			 
-	      <div id="form_container">				
+	    <div id="contact_container">	 
+		    
+	      <div id="form_container">		
+		      
 	        <div id="social_links_container">
+	
 		  <a href="https://www.linkedin.com/in/jameshuff95/">
+			  
 		    <div class="social_icon_container">
 	              <i id="linkedin" class="fa-brands fa-linkedin icon"></i>
 	              <p>LinkedIn</p>
 	            </div>
+			  
 	          </a>
+			
 	          <a href="https://github.com/Jameshuff95">
+			  
 	            <div class="social_icon_container">
 	              <i id="github" class="fa-brands fa-github icon"></i>
 	              <p>Github</p>
 	            </div>
+			  
                   </a>
+			
                   <a href="https://codepen.io/jhuff95">
+			  
 	            <div class="social_icon_container">
 	              <i id="codepen" class="fab fa-codepen icon"></i>
 	              <p>CodePen</p>
 	            </div>
+			  
                   </a>
-	        </div>
+			
+	        </div> <!--End Social Links Container-->
+		      
 		<form id="contact_form">
 			
 		  <label for="name">Name</label>
@@ -255,14 +328,11 @@
 		  <input id="email" type="email" name="email">
 			
 		  <label for="reason">Reason For Contacting Me</label>
-		  <select id="reason" name="reason" required>
-			  
+		  <select id="reason" name="reason" required>  
 	            <option class="option" disabled>Select One</option>
 		    <option class="option">Option1</option>
-			  
 	            <option class="option">Option2</option>
 	            <option class="option">Option3</option>
-			  
 	          </select>
 			
 		  <label for="message">Your Message</label>
@@ -270,14 +340,14 @@
 			
 	          <input id="send" name="send" type="submit" value="Submit">
 	
-		</form>
+		</form> <!--End Contact Form-->
 	      </div> <!--End Form Container-->
 	    </div> <!--End Contact Container-->
-		  
 	  </section>
-        </div>
-      </div>	
-    </div>
+		
+        </div> <!--End Test2-->
+      </div> <!--End Main-->	
+    </div> <!--End Test-->
     <script src="script.js"></script>
   </body>
 </html>
