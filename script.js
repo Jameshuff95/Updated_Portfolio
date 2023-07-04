@@ -55,7 +55,7 @@ switcher.addEventListener('click', function(event) {
   } else {
       const newX = event.clientX;
       const newY = event.clientY;
-      div.style.transform = `translate(${0}%, ${106}%)`;
+      div.style.transform = `translate(${0}%, ${10.5}vmin)`;
       flashlight.style.display = "block";
       body.style.backgroundColor = darkMode.background_color;
       body.style.color = darkMode.color;
