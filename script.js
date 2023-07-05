@@ -18,6 +18,9 @@ const darkMode = {
 };
 
 // global selectors
+const audio = document.createElement('audio');
+  audio.src = 'https://cdn.freesound.org/previews/263/263994_3076984-lq.mp3';
+const music = document.querySelector('#volume');
 const div = document.querySelector('#switch_tip');
 const switcher = document.querySelector('#inner_switch');
 const body = document.querySelector('body');
@@ -39,6 +42,16 @@ body.style.color = lightMode.color;
 for (let i = 0; i < navLinks.length; i++) {
   navLinks[i].style.color = lightMode.color;
 }
+
+music.addEventListener('click', function(event) {
+  if (isClicked) {
+    audio.pause();
+  } else {
+    audio.play();
+  }
+  isClicked = !isClicked
+})
+
 
 // Controls themes and switch_tip position
 switcher.addEventListener('click', function(event) {
