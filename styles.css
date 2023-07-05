@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Orbitron&family=Roboto:wght@300&family=Shadows+Into+Light&display=swap');
 
 
+
 #main {
   display: flex;
   flex-direction: column;
@@ -174,7 +175,7 @@ nav a {
   height: 40vmin;
   bordeR: 5px dashed red;
   border-radius: 20vmin;
-  margin: 0;
+  margin-top: 5vmin;
 }
 
 /* End About Me*/
@@ -184,6 +185,7 @@ nav a {
 #skills_section {
   height: 80vmin;
   display: flex;
+  flex-direction: column;
   align-items: center;
   overflow: hidden;
 }
@@ -191,9 +193,15 @@ nav a {
 #skills_container {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 80vmin;
   align-items: center;
   overflow: scroll;
+}
+
+#list_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 #skills_container h3 {
@@ -259,7 +267,7 @@ nav a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 2%;
-  margin: 10%;
+  margin: 5%;
   height: 50px;
 }
 
@@ -268,7 +276,7 @@ nav a {
   grid-template-columns: repeat(2, 1fr);
   padding: 2%;
   height: 50px;
-  margin: 10%;
+  margin: 5%;
 
 }
 
@@ -334,16 +342,21 @@ nav a {
 
 
 #other_skills_container {
-  margin: 5%;
   height: 250px;
+  padding: 5%;
   font-size: 3vmin;
+}
+
+.h3_container{
+width: 250px;
 }
 
 .other_skills_h3_container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 3%;
+  width: 400px;
 }
 
 .other_skills_h3_container i {
@@ -352,12 +365,14 @@ nav a {
 
 .other_skill_ul {
   list-style-type: numeric;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  width: 75%;
+  height: 400px;
 }
 
 .other_skill_ul li {
-  margin: 1%;
+  margin: 10%;
 }
 
 /* End Other Skills */
@@ -365,14 +380,15 @@ nav a {
 /* Portfolio */
 
 #portfolio_container {
-  height: 80vmin;
+  height: 70vmin;
+  margin-left: -7vmin;
   overflow: scroll;
 }
 
 .project_container {
   display: flex;
   justify-content: end;
-  height: 80vmax;
+  height: 80vmin;
   overflow: scroll;
 }
 
@@ -382,7 +398,6 @@ figure {
   align-items: center;
   justify-content: space-evenly;
   margin: 0;
-  height: 100%;
 }
 
 .project_image {
@@ -392,7 +407,7 @@ figure {
 }
 
 figcaption {
-  height: 32vmin;
+  height: 20vmin;
   width: 60vmin;
   padding: 1%;
 }
@@ -407,14 +422,12 @@ figcaption p {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 25%;
 }
 
 .project_changer {
-  height: 50%;
-  width: 45%;
-  background-color: transparent;
-  border: 1px solid black;
+  height: 10vmin;
+  width: 33%;
+  background-color: white;
   border-radius: 50px;
   cursor: pointer;
   box-shadow: inset 0 0 10px black;
@@ -442,7 +455,7 @@ figcaption p {
 }
 
 .icon {
-  font-size:4vw;
+  font-size: 4vw;
 }
 
 #linkedin {
@@ -464,7 +477,7 @@ figcaption p {
 #contact_container {
   display: flex;
   flex-direction: column;
-  height: 80vmin;
+  height: 70vmin;
   overflow: scroll;
 }
 
@@ -478,7 +491,7 @@ figcaption p {
   flex-direction: column;
   padding: 2%;
   row-gap: 10px;
-  font-size: 3vmax;
+  font-size: 3vmin;
   height: 100%;
 }
 

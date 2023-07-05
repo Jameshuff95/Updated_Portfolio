@@ -69,33 +69,32 @@
           <section class="section" id="skills_section">
             <div id="skills_container">	
 		      <div id="list_container">
-				<div>
-	              <div id="frontend_container" class="list">
-	                <h2 class="section_h2">Skills and Certifications</h2>
-			        <ul id="frontend_list" class="list_container_ul">	
-			          <div class="certs_h3_container">
-		                <i class="fa fa-arrow-left" onclick="switchSkill('backend_list')"></i>
-	                    <h3 class="list_container_h3">Front-End</h3>
-		                <i class="fa fa-arrow-right" onclick="switchSkill('backend_list')"></i>
-		              </div>
-		              <div class="list_item_container">
-	                    <li><a href="https://www.freecodecamp.org/certification/jhuff95/responsive-web-design">Responsive Web Design - freeCodeCamp</a></li> <!--Responsive Web Design Cert-->
-                        <li><a href="https://www.freecodecamp.org/certification/jhuff95/javascript-algorithms-and-data-structures">Javascript Algorithms & Data Structures - freeCodeCamp</a></li> <!--Javascript Cert-->
-	                    <li><a href="https://www.freecodecamp.org/certification/jhuff95/front-end-development-libraries">Front-End Libriaries Certification - freeCodeCamp</a></li> <!--Frontend Cert-->
-		              </div>
-		              <div id="frontend_icons" class="skill_icons_container">
-                        <i id="htmlIcon" class="skill_icon fa-brands fa-html5"></i>
-	                    <i id="cssIcon" class="skill_icon fa-brands fa-css3-alt"></i>
-	                    <i id="fontawesomeIcon" class="skill_icon fa-solid fa-font-awesome"></i>
-	                    <i id="figmaIcon" class="skill_icon fa-brands fa-figma"></i>
-	                    <i id="sassIcon" class="skill_icon fa-brands fa-sass"></i>
-	                    <i id="bootstrapIcon" class="skill_icon fa-brands fa-bootstrap"></i>
-	                    <i id="jsIcon" class="skill_icon fa-brands fa-square-js"></i>
-	                    <i id="reactIcon" class="skill_icon fa-brands fa-react"></i>
-	                  </div>  
-	                </ul> <!--End Frontend List-->
-	              </div> <!--End FrontEnd Container-->
-	            <div id="backend_container" class="list">
+	            <h2 class="section_h2">Skills and Certifications</h2>
+				<div class="skills">
+			      <ul id="frontend_list" class="list_container_ul">	
+			        <div class="certs_h3_container">
+		              <i class="fa fa-arrow-left" onclick="switchSkill('backend_list')"></i>
+	                  <h3 class="list_container_h3">Front-End</h3>
+		              <i class="fa fa-arrow-right" onclick="switchSkill('backend_list')"></i>
+		            </div>
+		            <div class="list_item_container">
+	                  <li><a href="https://www.freecodecamp.org/certification/jhuff95/responsive-web-design">Responsive Web Design - freeCodeCamp</a></li> <!--Responsive Web Design Cert-->
+                      <li><a href="https://www.freecodecamp.org/certification/jhuff95/javascript-algorithms-and-data-structures">Javascript Algorithms & Data Structures - freeCodeCamp</a></li> <!--Javascript Cert-->
+	                  <li><a href="https://www.freecodecamp.org/certification/jhuff95/front-end-development-libraries">Front-End Libriaries Certification - freeCodeCamp</a></li> <!--Frontend Cert-->
+		            </div>
+		            <div id="frontend_icons" class="skill_icons_container">
+                      <i id="htmlIcon" class="skill_icon fa-brands fa-html5"></i>
+	                  <i id="cssIcon" class="skill_icon fa-brands fa-css3-alt"></i>
+	                  <i id="fontawesomeIcon" class="skill_icon fa-solid fa-font-awesome"></i>
+	                  <i id="figmaIcon" class="skill_icon fa-brands fa-figma"></i>
+	                  <i id="sassIcon" class="skill_icon fa-brands fa-sass"></i>
+	                  <i id="bootstrapIcon" class="skill_icon fa-brands fa-bootstrap"></i>
+	                  <i id="jsIcon" class="skill_icon fa-brands fa-square-js"></i>
+	                  <i id="reactIcon" class="skill_icon fa-brands fa-react"></i>
+	                </div>  
+	              </ul> <!--End Frontend List-->
+				</div> <!--End Skills-->
+				<div class="skills">
 	              <ul id="backend_list" class="list_container_ul"> 
 			        <div class="certs_h3_container">
 		              <i class="fa fa-arrow-left" onclick="switchSkill('frontend_list')"></i>
@@ -105,7 +104,7 @@
 		            <div class="list_item_container">
 	                  <li><a href="https://i.ibb.co/1T4NWQw/sololearn-python.jpg">Python Fundamentals - Sololearn</li> <!--Python Cert-->
 	                  <li><a href="https://i.ibb.co/WBZMdm0/php-sololearn.jpg">PHP Fundamentals - Sololearn</a></li> <!--Php Cert-->
-		            </div>
+                    </div>
 			        <div id="backend_icons" class="skill_icons_container">
                       <i id="phpIcon" class="skill_icon fa-brands fa-php" aria-hidden="true"></i>
 	                  <i id="pythonIcon" class="skill_icon fa-brands fa-python" aria-hidden="true"></i>
@@ -113,13 +112,15 @@
 	                  <i id="databaseIcon" class="skill_icon fa-solid fa-database" aria-hidden="true"></i>
 	                </div>
                   </ul> <!--End Backend List-->
-	            </div> <!--End Backend Container-->
+				</div> <!--End Skills-->
               </div> <!--End List Container -->
               <div id="other_skills_container">    
                 <div id="technical_skills" class="skill_div">
 	              <div class="other_skills_h3_container">
 		            <i class="fa fa-arrow-left" onclick="switchOtherSkill('design_collab_skills')"></i>
-                    <h3 id="technical_skills_title" class="other_skills_h3">Technical Skills</h3>
+					<div class="h3_container">
+                      <h3 id="technical_skills_title" class="other_skills_h3">Technical Skills</h3>
+					</div>
 		            <i class="fa fa-arrow-right" onclick="switchOtherSkill('web_skills_container')"></i>
 		          </div>
                   <ul id="tech_skills_ul" class="other_skill_ul">
@@ -132,7 +133,9 @@
                 <div id="web_skills_container" class="skill_div"> 	
 	              <div class="other_skills_h3_container">
 		            <i class="fa fa-arrow-left" onclick="switchOtherSkill('technical_skills')"></i>
-                    <h3>Web Development Skills</h3>
+					<div class="h3_container">
+                      <h3>Web Development Skills</h3>
+					</div>
 		            <i class="fa fa-arrow-right" onclick="switchOtherSkill('design_collab_skills')"></i>
 		          </div>
                   <ul id="web_skills_ul" class="other_skill_ul">
@@ -146,7 +149,9 @@
                 <div id="design_collab_skills" class="skill_div">
 	              <div class="other_skills_h3_container">
 		            <i class="fa fa-arrow-left" onclick="switchOtherSkill('web_skills_container')"></i>
-                    <h3 id="design_collab_skills_container">Design & Collab. Skills</h3>
+					<div class="h3_container">
+                      <h3 id="design_collab_skills_container">Design & Collab. Skills</h3>
+				    </div>
 		            <i class="fa fa-arrow-right" onclick="switchOtherSkill('technical_skills')"></i>
 		          </div>
                   <ul id="design_ul" class="other_skill_ul">
