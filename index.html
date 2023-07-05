@@ -69,31 +69,32 @@
           <section class="section" id="skills_section">
             <div id="skills_container">	
 		      <div id="list_container">
-	            <div id="frontend_container" class="list">
-	              <h2 class="section_h2">Skills and Certifications</h2>
-			      <ul id="frontend_list" class="list_container_ul">	
-			        <div class="certs_h3_container">
-		              <i class="fa fa-arrow-left" onclick="switchSkill('backend_list')"></i>
-	                  <h3 class="list_container_h3">Front-End</h3>
-		              <i class="fa fa-arrow-right" onclick="switchSkill('backend_list')"></i>
-		            </div>
-		            <div class="list_item_container">
-	                  <li><a href="https://www.freecodecamp.org/certification/jhuff95/responsive-web-design">Responsive Web Design - freeCodeCamp</a></li> <!--Responsive Web Design Cert-->
-                      <li><a href="https://www.freecodecamp.org/certification/jhuff95/javascript-algorithms-and-data-structures">Javascript Algorithms & Data Structures - freeCodeCamp</a></li> <!--Javascript Cert-->
-	                  <li><a href="https://www.freecodecamp.org/certification/jhuff95/front-end-development-libraries">Front-End Libriaries Certification - freeCodeCamp</a></li> <!--Frontend Cert-->
-		            </div>
-		            <div id="frontend_icons" class="skill_icons_container">
-                      <i id="htmlIcon" class="skill_icon fa-brands fa-html5"></i>
-	                  <i id="cssIcon" class="skill_icon fa-brands fa-css3-alt"></i>
-	                  <i id="fontawesomeIcon" class="skill_icon fa-solid fa-font-awesome"></i>
-	                  <i id="figmaIcon" class="skill_icon fa-brands fa-figma"></i>
-	                  <i id="sassIcon" class="skill_icon fa-brands fa-sass"></i>
-	                  <i id="bootstrapIcon" class="skill_icon fa-brands fa-bootstrap"></i>
-	                  <i id="jsIcon" class="skill_icon fa-brands fa-square-js"></i>
-	                  <i id="reactIcon" class="skill_icon fa-brands fa-react"></i>
-	                </div>  
-	              </ul> <!--End Frontend List-->
-	            </div> <!--End FrontEnd Container-->
+				<div>
+	              <div id="frontend_container" class="list">
+	                <h2 class="section_h2">Skills and Certifications</h2>
+			        <ul id="frontend_list" class="list_container_ul">	
+			          <div class="certs_h3_container">
+		                <i class="fa fa-arrow-left" onclick="switchSkill('backend_list')"></i>
+	                    <h3 class="list_container_h3">Front-End</h3>
+		                <i class="fa fa-arrow-right" onclick="switchSkill('backend_list')"></i>
+		              </div>
+		              <div class="list_item_container">
+	                    <li><a href="https://www.freecodecamp.org/certification/jhuff95/responsive-web-design">Responsive Web Design - freeCodeCamp</a></li> <!--Responsive Web Design Cert-->
+                        <li><a href="https://www.freecodecamp.org/certification/jhuff95/javascript-algorithms-and-data-structures">Javascript Algorithms & Data Structures - freeCodeCamp</a></li> <!--Javascript Cert-->
+	                    <li><a href="https://www.freecodecamp.org/certification/jhuff95/front-end-development-libraries">Front-End Libriaries Certification - freeCodeCamp</a></li> <!--Frontend Cert-->
+		              </div>
+		              <div id="frontend_icons" class="skill_icons_container">
+                        <i id="htmlIcon" class="skill_icon fa-brands fa-html5"></i>
+	                    <i id="cssIcon" class="skill_icon fa-brands fa-css3-alt"></i>
+	                    <i id="fontawesomeIcon" class="skill_icon fa-solid fa-font-awesome"></i>
+	                    <i id="figmaIcon" class="skill_icon fa-brands fa-figma"></i>
+	                    <i id="sassIcon" class="skill_icon fa-brands fa-sass"></i>
+	                    <i id="bootstrapIcon" class="skill_icon fa-brands fa-bootstrap"></i>
+	                    <i id="jsIcon" class="skill_icon fa-brands fa-square-js"></i>
+	                    <i id="reactIcon" class="skill_icon fa-brands fa-react"></i>
+	                  </div>  
+	                </ul> <!--End Frontend List-->
+	              </div> <!--End FrontEnd Container-->
 	            <div id="backend_container" class="list">
 	              <ul id="backend_list" class="list_container_ul"> 
 			        <div class="certs_h3_container">
@@ -162,6 +163,7 @@
 		      <h2 class="section_h2">Portfolio</h2>	
 	          <div id="image0_div" class="project_container">       
 		        <figure>
+				  <h4>Chow Cabby</h4>
 		          <a href="https://codepen.io/jhuff95/pen/zYmgvpB">
 		            <img id="image0" class="project_image" src="https://i.ibb.co/GsyjV30/Untitled-8.png" alt="image0">
 		          </a>
@@ -169,13 +171,14 @@
 		            <p>Description 0</p>
 		          </figcaption>
 				  <div class="button_container">
-		            <button onclick="switchImage('image2_div')">Back</button>
-		            <button onclick="switchImage('image1_div')">Next</button>
+		            <button class="project_changer" onclick="switchImage('image2_div')">Back</button>
+		            <button class="project_changer" onclick="switchImage('image1_div')">Next</button>
 		          </div>
 	            </figure>      
 	          </div>  <!--End Image_0 Div-->											
 	          <div id="image1_div" class="project_container"> 
 	            <figure> 
+				  <h4>Magic 8 Ball</h4>
 			      <a href="https://codepen.io/jhuff95/pen/RwezBVM">
 		            <img id="image1" class="project_image" src="https://i.ibb.co/Qdsm3ML/Untitled.png" alt="image1">
 		          </a>
@@ -183,13 +186,14 @@
 		            <p>Description 1</p>
 		          </figcaption>	
 				  <div class="button_container">
-		            <button onclick="switchImage('image0_div')">Back</button>
-		            <button onclick="switchImage('image2_div')">Next</button>
+		            <button class="project_changer" onclick="switchImage('image0_div')">Back</button>
+		            <button class="project_changer" onclick="switchImage('image2_div')">Next</button>
 		          </div>
 		        </figure>				         
 	          </div> <!--End Image_1 Div-->									
 	          <div id="image2_div" class="project_container">
 	            <figure>
+			      <h4>Other</h4>
 		          <a href="https://codepen.io/jhuff95/pen/PoygZem">          
 		            <img id="image2" class="project_image" src="https://i.ibb.co/xmMDCgZ/Screenshot-2023-06-03-8-22-33-PM.png" alt="image2">
 		          </a>
@@ -197,8 +201,8 @@
 		            <p>Description 2</p>
 		          </figcaption>
 				  <div class="button_container">
-		            <button onclick="switchImage('image1_div')">Back</button>
-		            <button onclick="switchImage('image0_div')">Next</button>
+		            <button class="project_changer" onclick="switchImage('image1_div')">Back</button>
+		            <button class="project_changer" onclick="switchImage('image0_div')">Next</button>
 		          </div>
 		        </figure>
 	          </div> <!--End Image_3 Div-->

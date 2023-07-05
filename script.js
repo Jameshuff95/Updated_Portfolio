@@ -1,6 +1,6 @@
 // This determines which section is loaded on forst load
 window.onload = function() {
-  showSection('skills_section'); // Display bio section on page load
+  showSection('contact_section'); // Display bio section on page load
     switchSkill('frontend_list');
     switchOtherSkill('technical_skills');
     switchImage('image0_div');
@@ -55,7 +55,7 @@ switcher.addEventListener('click', function(event) {
   } else {
       const newX = event.clientX;
       const newY = event.clientY;
-      div.style.transform = `translate(${0}%, ${10.5}vmin)`;
+      div.style.transform = `translate(${0}%, ${10}vmin)`;
       flashlight.style.display = "block";
       body.style.backgroundColor = darkMode.background_color;
       body.style.color = darkMode.color;
