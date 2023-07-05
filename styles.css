@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Orbitron&family=Roboto:wght@300&family=Shadows+Into+Light&display=swap');
 
-
-
 #main {
   display: flex;
   flex-direction: column;
@@ -184,6 +182,7 @@ nav a {
 
 #skills_section {
   height: 80vmin;
+  width: 80vmin;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -230,7 +229,7 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 5% 10%;
+  margin: 5% auto;
   font-size: 3vmin;
 } 
 
@@ -347,16 +346,12 @@ nav a {
   font-size: 3vmin;
 }
 
-.h3_container{
-width: 250px;
-}
-
 .other_skills_h3_container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  margin-top: 3%;
-  width: 400px;
+  justify-content: space-between;
+  width: 70vmin;
+  margin: 5% auto;
 }
 
 .other_skills_h3_container i {
@@ -389,7 +384,6 @@ width: 250px;
   display: flex;
   justify-content: end;
   height: 80vmin;
-  overflow: scroll;
 }
 
 figure {
@@ -504,6 +498,16 @@ figcaption p {
   height: 150px;
 }
 
+#send {
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 2%;
+  cursor: pointer;
+}
+
+#send:hover {
+  transform: scale(0.95);
+}
 /* End Contact */
 
 
