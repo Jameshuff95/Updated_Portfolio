@@ -495,9 +495,7 @@ figcaption p {
 }
 
 #message {
-  width: 125%;
   height: 100px;
-  margin-left: -28%;
 }
 
 #send {
