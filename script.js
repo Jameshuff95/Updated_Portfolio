@@ -1,9 +1,9 @@
 // This determines which section is loaded on forst load
 window.onload = function() {
-  showSection('contact_section'); // Display bio section on page load
-    switchSkill('frontend_list');
-    switchOtherSkill('technical_skills');
-    switchImage('image0_div');
+  showSection('about_me_section'); // Display bio section on page load
+  switchSkill('frontend_list');
+  switchOtherSkill('technical_skills');
+  switchImage('image0_div');
  };
 
 // themes
@@ -20,7 +20,8 @@ const darkMode = {
 // global selectors
 const audio = document.createElement('audio');
   audio.src = 'https://cdn.freesound.org/previews/263/263994_3076984-lq.mp3';
-const music = document.querySelector('#volume');
+const musicOn = document.querySelector('#play');
+const musicOff = document.querySelector('#pause');
 const div = document.querySelector('#switch_tip');
 const switcher = document.querySelector('#inner_switch');
 const body = document.querySelector('body');
@@ -43,15 +44,26 @@ for (let i = 0; i < navLinks.length; i++) {
   navLinks[i].style.color = lightMode.color;
 }
 
-music.addEventListener('click', function(event) {
+const play = () => {
+  audio.play();
+}
+
+const pause = () => {
+  audio.pause();
+}
+
+// Define the event listener for the music element
+musicOn.addEventListener('click', function(event) {
   if (isClicked) {
-    audio.pause();
-  } else {
-    audio.play();
+    play();
   }
-  isClicked = !isClicked
 })
 
+musicOff.addEventListener('click', function(event) {
+  if (isClicked) {
+    pause();
+  }
+})
 
 // Controls themes and switch_tip position
 switcher.addEventListener('click', function(event) {
@@ -98,6 +110,17 @@ document.addEventListener('mousemove', function(event) {
   flashlight.style.top = y - 50 + scrollY + 'px';
 	
 });
+
+function showIcon(iconId) {
+  let volumeSwitchIcon = document.getElementById(iconId);
+  let icons = document.getElementsByClassName('audio_icon');
+
+  for (let i = 0; i < icons.length; i++) {
+    icons[i].style.display = 'none';
+  }
+
+  volumeSwitchIcon.style.display = 'block';
+}
 
 // This determines what section is displayed connected by onclick used with each navLink in HTML file
 function showSection(sectionId) {
