@@ -16,24 +16,30 @@
     <div id="test">
       <header>
         <nav>
-          <div id="name_container">
-            <div id="my_name">
-			  <div id="volume_icon_container">
-				<i id="play" onclick="play(), showIcon('#play')" class="fa-solid fa-play audio_icon"></i>
-			    <i id="pause" onclick="pause(), showIcon('#pause')" class="fa-solid fa-pause audio_icon"></i>
-			  </div>
-              <h1>James Huff</h1>
-	          <p>Web Developer</p>
+		  <div id="volume_icon_container">
+			<p id="sounds_label">Fire-side Sounds</p>
+			<div id="sound_icon_container">
+			  <i id="play" onclick="play()" class="fa-solid fa-play audio_icon"></i>
+			  <i id="pause" onclick="pause()" class="fa-solid fa-pause audio_icon"></i>
 			</div>
-            <div id="switch_container">
-              <div id="outer_switch">    
-	            <div id="inner_switch">
-	              <div id="switch_tip"></div>
-	            </div>   
-              </div> 
-            </div> <!--End Switch Container-->
+		  </div>
+		  <div id="switch">
+			<p class="label" id="light_label">Light Mode</p>
+			<div id="switch_container">
+			  <div id="outer_switch">    
+				<div id="inner_switch">
+				  <div id="switch_tip"></div>
+				</div>   
+			  </div> 
+			</div> <!--End Switch Container-->
+			<p class="label" id="dark_label">Dark Mode</p>
+		  </div> <!--End Switch-->
+          <div id="name_container">
+			<h1>James Huff</h1>
+	        <p>Web Developer</p>
           </div> <!--End Name Container-->
           <div id="navLinks_container">
+			<a id="cv" href="#" download="James_Huff_Cover_Letter.pdf">Download CV</a>
             <div id="aboutMeLinkContainer">
               <p class="navLink"><a href="#" onclick="showSection('about_me_section')">About Me</a></p>
             </div>

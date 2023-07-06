@@ -92,23 +92,37 @@ switcher.addEventListener('click', function(event) {
 });
 
 // This determines the position of the flashlight
-document.addEventListener('mousemove', function(event) {
-	
-  // This gets the cursor coordinates relative to the viewport
-  const x = event.clientX;
-  const y = event.clientY;
-
+function updateFlashlightPosition(x, y) {
   // Get the scroll offset of the page
   const scrollX = window.pageXOffset;
   const scrollY = window.pageYOffset;
-	
+
   // This adds a smooth CSS transition property to the flashlight
-  flashlight.style.transition = 'left 0.2s ease, top 0.2s ease'; 
-	
+  flashlight.style.transition = 'left 0.2s ease, top 0.2s ease';
+
   // This accounts for the scroll offset
   flashlight.style.left = x - 50 + scrollX + 'px';
   flashlight.style.top = y - 50 + scrollY + 'px';
-	
+}
+
+document.addEventListener('mousemove', function(event) {
+  // Get the cursor coordinates relative to the viewport
+  const x = event.clientX;
+  const y = event.clientY;
+
+  updateFlashlightPosition(x, y);
+});
+
+document.addEventListener('touchmove', function(event) {
+  // Prevent default touch event behavior
+  event.preventDefault();
+
+  // Get the first touch point's coordinates relative to the viewport
+  const touch = event.touches[0];
+  const x = touch.clientX;
+  const y = touch.clientY;
+
+  updateFlashlightPosition(x, y);
 });
 
 function showIcon(iconId) {
