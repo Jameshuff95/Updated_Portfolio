@@ -23,7 +23,7 @@
   }
   
   /* Header Section */
-  
+
     /* Header General */ 
      header {
         margin: 9%;
@@ -36,11 +36,10 @@
         nav {
           font-family: Cinzel;
           font-size: 2.5vmin;
-          height: 100%;
+          height: 50%;
           display: flex;
           flex-direction: column;
           align-items: center;
-          border: 1px solid black;
         }
   
         nav a {
@@ -352,7 +351,7 @@
           }
 
           #bashIcon {
-            color: black;
+            color: rgba(32, 32, 190, 0.895);
           }
 
           #postgresIcon {
