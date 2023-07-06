@@ -11,7 +11,7 @@
 
 /* General Styles */
 #volume_icon_container {
-  font-size: 30px;
+  font-size: 5vmin;
 }
 
 #play, #pause {

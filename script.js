@@ -80,7 +80,7 @@ switcher.addEventListener('click', function(event) {
   } else {
       const newX = event.clientX;
       const newY = event.clientY;
-      div.style.transform = `translate(${0}%, ${10}vmin)`;
+      div.style.transform = `translate(${0}%, ${110}%)`;
       flashlight.style.display = "block";
       body.style.backgroundColor = darkMode.background_color;
       body.style.color = darkMode.color;
