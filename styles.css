@@ -404,6 +404,7 @@
       padding: 5%;
       font-size: 3vmin;
       width: 80%;
+      overflow: scroll;
     }
 
     .other_skills_h3_container {
