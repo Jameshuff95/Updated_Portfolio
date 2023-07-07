@@ -136,7 +136,7 @@
           border-radius: 10px;
           padding: 5%;
           margin: 5%;
-          box-shadow: inset 0 0 10px black;
+          box-shadow: inset 0 0 10px;
         }
 
       /*End CV Link*/
@@ -193,8 +193,6 @@
 
       #about_me_container {
         font-size: 3vmin;
-        height: 100%;
-        overflow: scroll;
       }
 
       #about_me_paragraphs {
@@ -209,7 +207,7 @@
       }
 
       #my_photo {
-        bordeR: 15px groove red;
+        bordeR: 15px groove;
         border-radius: 85vmin 45vmin 85vmin 45vmin;
         margin-top: 5vmin;
         height: 40vmin;
@@ -574,7 +572,6 @@
     display: grid;
     grid-template-columns: .5fr 1.5fr;
     width: 100vw;
-    overflow: scroll;
   }
 
   #test2 {
