@@ -66,12 +66,10 @@
           cursor: pointer;
           margin: auto;
           padding: 10%;
-          color: black;
         }
         
         #play:hover, #pause:hover {
           transform: scale(.9);
-          color: red;
         }
 
       /* End Sounds Section */
