@@ -458,8 +458,8 @@
     }
 
     .project_image {
-      height: 50vmin;
-      width: 70vmin;
+      height: 40vmin;
+      width: 60vmin;
       border-radius: 10px;
       border: 1px solid black;
     }
