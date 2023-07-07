@@ -22,9 +22,11 @@ const darkMode = {
 // global selectors
 const audio = document.createElement('audio');
   audio.src = 'https://cdn.freesound.org/previews/263/263994_3076984-lq.mp3';
+const musicIcons = document.querySelectorAll('.audio_icon');
 const musicOn = document.querySelector('#play');
 const musicOff = document.querySelector('#pause');
 const cv = document.querySelector('#cv');
+const modeLabel = document.querySelector('#label');
 const div = document.querySelector('#switch_tip');
 const switcher = document.querySelector('#inner_switch');
 const body = document.querySelector('body');
@@ -49,7 +51,10 @@ for (let i = 0; i < navLinks.length; i++) {
 }
 cv.style.boxShadow = lightMode.color;
 picture.style.borderColor = lightMode.color1;
-
+musicIcons.forEach(function(musicIcon) {
+  musicIcon.style.color = lightMode.color;
+});
+modeLabel.innerText = "Light Mode";
 // This defines the play variable for the fireside sounds
 const play = () => {
   audio.play();
@@ -82,6 +87,10 @@ switcher.addEventListener('click', function(event) {
     body.style.color = lightMode.color;
     cv.style.boxShadow = lightMode.color1;
     picture.style.borderColor = lightMode.color1;
+    musicIcons.forEach(function(musicIcon) {
+      musicIcon.style.color = lightMode.color;
+    });
+    modeLabel.innerText = "Light Mode";
     for (let i = 0; i < navLinks.length; i++) {
       navLinks[i].style.color = lightMode.color;
     }
@@ -95,6 +104,10 @@ switcher.addEventListener('click', function(event) {
       body.style.color = darkMode.color;
       cv.style.boxShadow = darkMode.color;
       picture.style.borderColor = darkMode.color;
+      musicIcons.forEach(function(musicIcon) {
+        musicIcon.style.color = darkMode.color;
+      });
+      modeLabel.innerText = "Dark Mode";
       for (let i = 0; i < navLinks.length; i++) {
         navLinks[i].style.color = darkMode.color;
       }

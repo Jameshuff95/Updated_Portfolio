@@ -48,12 +48,13 @@
       /* End Nav General */
 
       /* Sounds Section */
-        #sounds_label, .label {
+        #sounds_label, #label {
           font-size: 2vmin;
         }
 
         #volume_icon_container {  /*This contains icons and title*/
           font-size: 3vmin;
+          margin-bottom: 5vmin;
         }
 
         #sound_icon_container {  /*This contains just icons*/
